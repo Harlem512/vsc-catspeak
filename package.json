@@ -1,0 +1,56 @@
+{
+  "name": "vsc-catspeak",
+  "displayName": "Catspeak",
+  "description": "VS Code Catspeak support",
+  "version": "1.0.0",
+  "publisher": "harlem512",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "Catspeak",
+    "Markdown"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "catspeak",
+        "aliases": [
+          "Catspeak",
+          "catspeak",
+          "sp",
+          "meow"
+        ],
+        "extensions": [
+          ".meow",
+          ".catspeak"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/catspeak-logo-light.svg",
+          "dark": "./icons/catspeak-logo-dark.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "catspeak",
+        "scopeName": "source.catspeak",
+        "path": "./syntaxes/catspeak.tmLanguage.json"
+      },
+      {
+        "scopeName": "text.html.markdown.codeblock.catspeak",
+        "path": "./syntaxes/codeblock.tmLanguage.json",
+        "injectTo": [
+            "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+            "meta.embedded.block.catspeak": "catspeak"
+        }
+    }
+    ]
+  }
+}
