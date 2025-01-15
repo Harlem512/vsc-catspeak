@@ -6,11 +6,11 @@ If you want cool icons, download them from the Catspeak repository and add them 
 
 # To Install
 
-Download a release over on the right and extract it in into `[user home]/.vscode/extensions`.
+Download a release over on the right and extract it in into somewhere safe (probably `[user home]/.vscode/extensions`). Then, use the `Developer: Install extension from location" command palette option to install it.
 
 On Windows, this is `%USERPROFILE%/.vscode/extensions`. Linux is probably `~/.vscode/extensions`.
 
-# To run locally
+# To run locally (for testing purposes)
 
 - Go to `Run -> Start Debugging` and select `Extension` to run the extension without installing.
 
